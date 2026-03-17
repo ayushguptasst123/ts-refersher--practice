@@ -7,6 +7,8 @@ This repository contains my TypeScript learning journey, covering the fundamenta
 ## 📚 Topics Covered
 
 - Interface,
+- Array
+- Function
 
 ---
 

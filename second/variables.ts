@@ -32,8 +32,23 @@ const printMysalary: (
   else console.log(`${employeeName} can't working any company `);
 };
 
+/*
 printMysalary(2, "Ayush", "TCS", true);
 printMysalary(4, "Ravi", "Infosys", false);
 printMysalary(1, "Neha", "Wipro", true);
 printMysalary(3, "Karan", "HCL", false);
 printMysalary(5, "Sneha", "Accenture", true);
+*/
+
+/**
+ * variable type on time of declaration
+ */
+let randomNumber = 23;
+// randomNumber = true; // We can't change the type after initialization. TypeScript automatically infers the type at the time of initialization.
+// NOTE: It's only work if you initialize the variable on time of creation
+
+let something;
+something = 783;
+console.log(something);
+something = false;
+console.log(something);
