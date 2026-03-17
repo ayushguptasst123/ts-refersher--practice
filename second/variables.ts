@@ -13,6 +13,11 @@ names.forEach((name, i) => {
 
 /**
  *Types for Function
+ *
+ * const functionName : (
+ *  parameterName: type
+ * )=> returnType
+ * = (---)=>{---}
  */
 const printMysalary: (
   workExperience: number,
