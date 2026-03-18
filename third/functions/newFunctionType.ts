@@ -21,3 +21,22 @@ function divide(a: number, b: number): number {
 const mul = function (a: number, b: number): number {
   return a * b;
 };
+
+// ***********************************************************
+// ***************WORKING WITH OBJECT PARAM******************
+// ***********************************************************
+
+const todayWeather = {
+  date: new Date(),
+  weather: "Sunny",
+};
+
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): undefined => {
+  console.log(`${date} weather is: ${weather}`);
+};
