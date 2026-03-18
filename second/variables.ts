@@ -19,7 +19,7 @@ names.forEach((name, i) => {
  * )=> returnType
  * = (---)=>{---}
  */
-const printMysalary: (
+const printMyEmployeeDetails: (
   workExperience: number,
   employeeName: string,
   compnayName: string,
@@ -38,11 +38,11 @@ const printMysalary: (
 };
 
 /*
-printMysalary(2, "Ayush", "TCS", true);
-printMysalary(4, "Ravi", "Infosys", false);
-printMysalary(1, "Neha", "Wipro", true);
-printMysalary(3, "Karan", "HCL", false);
-printMysalary(5, "Sneha", "Accenture", true);
+printMyEmployeeDetails(2, "Ayush", "TCS", true);
+printMyEmployeeDetails(4, "Ravi", "Infosys", false);
+printMyEmployeeDetails(1, "Neha", "Wipro", true);
+printMyEmployeeDetails(3, "Karan", "HCL", false);
+printMyEmployeeDetails(5, "Sneha", "Accenture", true);
 */
 
 /**

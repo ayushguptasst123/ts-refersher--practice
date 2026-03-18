@@ -10,6 +10,7 @@ This repository contains my TypeScript learning journey, covering the fundamenta
 - Array
 - Function
 - Inference
+- Any type
 
 ---
 
