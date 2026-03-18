@@ -1,4 +1,4 @@
-# ts-refresher--practice
+# <center> TS-Refresher </center>
 
 This repository contains my TypeScript learning journey, covering the fundamentals as a refresher before moving on to backend development with NestJS.
 
@@ -8,6 +8,10 @@ This repository contains my TypeScript learning journey, covering the fundamenta
 
 - Interface (Basics),
 - Array
+  - Single dimension
+  - Multi dimension
+  - Two diff type in a single array
+- Tuple
 - Function
   - Types in Param
   - Types in return
