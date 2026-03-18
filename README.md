@@ -16,6 +16,7 @@ This repository contains my TypeScript learning journey, covering the fundamenta
   - Object in Param
 - Inference
 - Any type
+- Object
 
 ---
 
