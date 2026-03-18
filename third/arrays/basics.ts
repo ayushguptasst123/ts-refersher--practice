@@ -36,3 +36,14 @@ const dummyArr: {
 ];
 
 dummyArr[1].saySomething();
+
+const nameMarksArr: (string | number)[] = [
+  "abhinav",
+  24,
+  "ramesh",
+  31,
+  "tusar",
+  33,
+];
+
+console.log(nameMarksArr);
