@@ -1,26 +1,21 @@
 class Vehicle {
+  static color: string = "red";
+
+  constructor(color: string) {
+    Vehicle.color = color;
+  }
+
   drive(): void {
     console.log("chugga chugga");
-  }
-
-  protected honk(): void {
-    console.log("beep");
-  }
-
-  static blowHorn(): void {
-    console.log("Clear the road");
   }
 }
 
 class Car extends Vehicle {
-  honk() {
-    console.log("Beep");
+  constructor(color: string) {
+    super(color);
   }
 }
 
-const vehicle = new Vehicle();
-const car = new Car();
-
-Vehicle.blowHorn();
-car.drive();
-car.honk();
+const car = new Car("violet");
+console.log(Vehicle.color);
+// console.log(car);
