@@ -9,6 +9,11 @@ This repository contains my TypeScript learning journey, covering the fundamenta
 - Interface (Basics),
 - Array
 - Function
+  - Types in Param
+  - Types in return
+    - `: void` (didn't return anything)
+    - `: never` (function isn't execute completely)
+  - Object in Param
 - Inference
 - Any type
 
