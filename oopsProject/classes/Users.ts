@@ -1,18 +1,13 @@
-class User {
-  private id: number;
+import { Order } from "./Orders";
+import { Restaurant } from "./Restaurant";
+
+abstract class User {
   private name: string;
   private age: number;
   private email: string;
   private phone: string;
 
-  constructor(
-    id: number,
-    name: string,
-    age: number,
-    email: string,
-    phone: string,
-  ) {
-    this.id = id;
+  constructor(name: string, age: number, email: string, phone: string) {
     this.name = name;
     this.age = age;
     this.email = email;
@@ -20,9 +15,6 @@ class User {
   }
 
   // Getters & Setters
-  getId(): number {
-    return this.id;
-  }
 
   getName(): string {
     return this.name;
@@ -61,14 +53,13 @@ export class Manager extends User {
   private salary: number;
 
   constructor(
-    id: number,
     name: string,
     age: number,
     email: string,
     phone: string,
     salary: number,
   ) {
-    super(id, name, age, email, phone);
+    super(name, age, email, phone);
     this.salary = salary;
   }
 
@@ -82,7 +73,6 @@ export class Chef extends User {
   private experienceYears: number;
 
   constructor(
-    id: number,
     name: string,
     age: number,
     email: string,
@@ -90,7 +80,7 @@ export class Chef extends User {
     specialization: string,
     experienceYears: number,
   ) {
-    super(id, name, age, email, phone);
+    super(name, age, email, phone);
     this.specialization = specialization;
     this.experienceYears = experienceYears;
   }
@@ -106,24 +96,22 @@ export class Chef extends User {
 
 export class Customer extends User {
   private isPremium: boolean;
-  private totalOrder: number;
+  private orders: Order[] = [];
 
   constructor(
-    id: number,
     name: string,
     age: number,
     email: string,
     phone: string,
     isPremium: boolean = false,
-    totalOrder: number = 0,
   ) {
-    super(id, name, age, email, phone);
+    super(name, age, email, phone);
     this.isPremium = isPremium;
-    this.totalOrder = totalOrder;
   }
 
-  public getTotalOrders(): number {
-    return this.totalOrder;
+  public addOrder(order: Order, restaurant: Restaurant) {
+    this.orders.push(order);
+    restaurant.addOrder(order);
   }
 
   isPremiumCustomer(): boolean {

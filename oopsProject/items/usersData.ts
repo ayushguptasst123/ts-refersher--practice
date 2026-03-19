@@ -66,7 +66,6 @@ const customer1 = new Customer(
   "neha.gupta@example.com",
   "9871234567",
   true,
-  null,
 );
 const customer2 = new Customer(
   "Rohan Shah",
@@ -74,7 +73,6 @@ const customer2 = new Customer(
   "rohan.shah@example.com",
   "9123456789",
   false,
-  null,
 );
 const customer3 = new Customer(
   "Sneha Patel",
@@ -82,7 +80,6 @@ const customer3 = new Customer(
   "sneha.patel@example.com",
   "9988776655",
   true,
-  null,
 );
 
 export {
