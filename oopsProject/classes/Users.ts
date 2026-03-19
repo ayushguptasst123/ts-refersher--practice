@@ -109,9 +109,21 @@ export class Customer extends User {
     this.isPremium = isPremium;
   }
 
+  public setPremium(isPremium: boolean): void {
+    this.isPremium = isPremium;
+  }
+
+  public getPremium(): boolean {
+    return this.isPremium;
+  }
+
   public addOrder(order: Order, restaurant: Restaurant) {
     this.orders.push(order);
     restaurant.addOrder(order);
+  }
+
+  public getAllOrders(): Order[] {
+    return this.orders;
   }
 
   isPremiumCustomer(): boolean {
