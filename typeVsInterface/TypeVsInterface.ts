@@ -14,14 +14,39 @@ Type: If we use a type in a class, it doesn’t force us to declare all the vari
 `const obj:VaraiableOfType = new Class();`
 
 */
-
-type addressType = {
+type latlong1 = {
+  lat: number;
+  lon: number;
+};
+type addressType1 = {
+  memberName: string[];
   wardNo: number;
   lane: string;
+  lane2?: string;
   pincode: number;
   city: string;
+  country: "USA" | "INDIA" | "CHINA";
+  coordinates: latlong3;
   isMetroCity: boolean;
 };
+
+const coordinates1: latlong1 = {
+  lat: 0,
+  lon: 0,
+};
+
+const address1: addressType1 = {
+  memberName: ["Ramesh", "arav", "mahesh"],
+  wardNo: 12,
+  lane: "Ram dhan ghos lane",
+  pincode: 700003,
+  city: "kolkata",
+  country: "CHINA",
+  coordinates: coordinates1,
+  isMetroCity: true,
+};
+
+console.log(address1);
 
 // By using CLASS
 type latlong3 = {
